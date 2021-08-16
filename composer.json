@@ -15,5 +15,12 @@
         "psr-4": {
             "Gi30\\Seeder\\" : "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Gi30\\Seeder\\SeederServiceProvider"
+            ]
+        }
     }
 }
