@@ -1,0 +1,19 @@
+{
+    "name": "gi30/seeders",
+    "description": "Seeders and migrations for initial setups",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gi30",
+            "email": "justin@gi30.co.uk"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Gi30\\Seeder\\" : "src/"
+        }
+    }
+}
