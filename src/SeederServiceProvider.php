@@ -10,13 +10,10 @@ class SeederServiceProvider extends ServiceProvider{
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
 
         $this->publishes([
-            __DIR__.'/public' => public_path('sql'),]);
-
-        $this->publishes([
-            __DIR__.'/database/migrations/' => database_path('migrations')
-        ]);
-        $this->publishes([
-            __DIR__.'/database/seeders/' => database_path('seeders')
+            __DIR__.'/public' => public_path('sql'),
+            __DIR__.'/database/migrations/' => database_path('migrations'),
+            __DIR__.'/database/seeders/' => database_path('seeders'),
+            __DIR__.'/Models' => app_path('Models')
         ]);
 
     }
